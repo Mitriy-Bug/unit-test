@@ -1,4 +1,5 @@
 export function httpGet(url) {
+  return "{}";
   throw new Error(url);
 }
 
