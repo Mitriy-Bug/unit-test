@@ -1,7 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 export default function health(unit_health) {
-  let result_unit_health = null;
-  for (const item of items) {
-    result += item;
+  const result_unit_health = unit_health.health;
+  if(result_unit_health > 50) {
+    return "healthy"
+  } else if (result_unit_health <= 50 && result_unit_health >= 15) {
+    return "wounded"
+  } else {
+    return "critical"
   }
-  return result_unit_health;
 }
